@@ -4,7 +4,7 @@ from django.conf import settings
 
 class Command(BaseCommand):
 
-    def handle(self):
+    def handle(self, *args, **kwargs):
         print 'STATIC_URL = {}'.format(settings.STATIC_URL)
         print 'AWS_ACCESS_KEY_ID = {}'.format(settings.AWS_ACCESS_KEY_ID)
         print 'AWS_SECRET_ACCESS_KEY = {}'.format(settings.AWS_SECRET_ACCESS_KEY)
